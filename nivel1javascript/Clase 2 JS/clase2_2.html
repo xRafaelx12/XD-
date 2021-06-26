@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Clase_2_2_JS1</title>
+</head>
+<body>
+	<script type="text/javascript">
+		alert("antes del texto");
+	</script>
+	Antes del script con prompt <br>
+	<script type="text/javascript">
+	var i=0;
+	fun: do{
+		var nombre=prompt("Diga su nombre:");
+		console.log(nombre)
+		//si el usuariohae click en el boton
+		//cancelar, prompt retorna null
+		//si el usuario hace click en el boton
+		//aceptar sin escribir nada, prompt retorna
+		//una cadena vacia
+		if(nombre==null || nombre==""){
+			alert("Debe escribir un nombre (no numeros), no dejar vacio \n y luego dar click en aceptar");
+		}
+		else
+			if(isNaN(nombre)){
+				alert("El nombre es: "+nombre);
+				i++;
+			}	
+			else{
+				alert("Es un numero, recuerda no escribir numeros \n\n Reintentalo");
+			}
+		continue fun;			
+		i++;
+	}while(i<1)
+		
+	</script>
+	luego del script
+</body>
+</html>
